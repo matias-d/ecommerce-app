@@ -13,7 +13,7 @@ function App() {
   return (
     <div className=" h-screen scrollbar-thin scrollbar-thumb-base-ligth scrollbar-track-base-ligth/50 overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
       <Routes>
-        <Route path="/" element={<Home />}/>
+        <Route path="/ecommerce-app" element={<Home />}/>
         <Route path='/product/:id' element={<ProductDetail/>}/>
         <Route path='/auth/login' element={<Auth/>}/>
         <Route path='/menu' element={<MenuAdmin/>}/>

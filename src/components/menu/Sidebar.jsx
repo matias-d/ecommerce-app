@@ -17,7 +17,7 @@ export const Sidebar = () => {
             <p className='bg-base-ligth w-20 py-1 px-3 rounded-xl text-white font-medium'>Admin</p>
         </div>
         <ul className='flex flex-col gap-4 bg-base-ligth h-full py-12 rounded-tr-[100px]  px-6'>
-            <li><Link to='/' className='flex items-center gap-2 text-white font-medium text-md hover:bg-base-semilight p-2 rounded-full'><RiHome2Line className=' text-xl font-bold' /> Inicio</Link></li>
+            <li><Link to='/ecommerce-app' className='flex items-center gap-2 text-white font-medium text-md hover:bg-base-semilight p-2 rounded-full'><RiHome2Line className=' text-xl font-bold' /> Inicio</Link></li>
             <li><Link to='/menu' className='flex items-center gap-2 text-white font-medium text-md hover:bg-base-semilight p-2 rounded-full'><RiShoppingCart2Line className=' text-xl font-bold'/>Tus Productos</Link></li>
             <li><a href='#' className='flex items-center gap-2 text-white font-medium text-md hover:bg-base-semilight p-2 rounded-full'><RiTeamLine className=' text-xl font-bold'/> Clientes</a></li>
             <li className='mb-8'><a href='#' className='flex items-center gap-2 text-white font-medium text-md hover:bg-base-semilight p-2 rounded-full'><RiCustomerService2Line className=' text-xl font-bold'/> Reportes</a></li>

@@ -22,15 +22,15 @@ export const Header = () => {
 
   return (
     <header className=' flex flex-col md:flex-row justify-around items-center text-base-dark py-4 gap-4 md:gap-0 border border-b-base-dark/5'>
-        <Link to='/'>
+        <Link to='/ecommerce-app'>
         <div className='flex gap-2 items-center'>
             <img src='https://cdn-icons-png.flaticon.com/512/5248/5248390.png' className='w-10 h-10'/><h1 className='font-bold tracking-widest text-lg'>ECO<span className='text-base-ligth'>M</span></h1>
         </div>
         </Link>
         <nav className='order-1 md:order-none'>
             <ul className='flex'> 
-                <li><Link to='/' className='text-sm font-semibold py-2 px-3 rounded-full hover:bg-base-dark/25  transition-all flex items-center gap-x-1'> <RiHome2Line className='font-bold text-lg text-base-ligth'/> Inicio</Link></li>
-                <li><Link to='#' className='text-sm font-semibold py-2 px-3 rounded-full hover:bg-base-dark/25 transition-all flex items-center gap-x-1'> <RiCodeFill className='font-bold text-lg text-base-ligth'/> Sobre</Link></li>
+                <li><Link to='/ecommerce-app' className='text-sm font-semibold py-2 px-3 rounded-full hover:bg-base-dark/25  transition-all flex items-center gap-x-1'> <RiHome2Line className='font-bold text-lg text-base-ligth'/> Inicio</Link></li>
+                <li><a href='https://github.com/matias-d/ecommerce-app' target='blank' className='text-sm font-semibold py-2 px-3 rounded-full hover:bg-base-dark/25 transition-all flex items-center gap-x-1'> <RiCodeFill className='font-bold text-lg text-base-ligth'/> Sobre</a></li>
                 <li onClick={() => setDropDown({...dropDown, open: !dropDown.open})} className='relative'>
                 <p className='text-sm font-semibold py-2 px-3 rounded-tr-xl rounded-tl-xl hover:bg-base-dark/25 transition-all flex items-center cursor-pointer'>  Categorias <RiArrowDropRightLine className={`font-medium text-xl text-base-ligth ${dropDown.open && 'rotate-90'} transition-all `}/></p>
                 {
