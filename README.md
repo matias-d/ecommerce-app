@@ -34,7 +34,7 @@ Es muy importante que el sitio sea adaptable para que los clientes puedan compra
 - 
 ------
 
-- ### [Preview Page](https://matias-d.github.io/Ahorcado-Game/) :video_game:
+- ### [Preview Page](https://matias-d.github.io/ecommerce-app/) 🛒
   <img  src="https://i.postimg.cc/Vv3x9h9H/Pixel-3-3-XL-393x786.png" width = 393 height = 768>
   <img  src="https://i.postimg.cc/sX0dxxMz/i-Pad-768x1024.png" width = 393 heigth = 768>
   
