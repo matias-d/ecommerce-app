@@ -9,7 +9,7 @@ export const Header = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    navigate(`/moda/search/${searchProduct}`)
+    navigate(`/ecommerce-app/moda/search/${searchProduct}`)
     setSearchProduct('')
   }
 
