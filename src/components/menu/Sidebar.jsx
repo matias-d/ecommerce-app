@@ -9,7 +9,7 @@ export const Sidebar = () => {
 
   return (
     <>
-    <section className={`lg:w-96  w-72 fixed ${showModal ? 'left-0' : '-left-full'} md:relative  z-40 bg-gray-100 md:bg-base-ligth/70 transition-all duration-300 md:left-0`}>
+    <section className={`lg:w-96  w-72 fixed ${showModal ? 'left-0' : '-left-full'} md:relative  z-40 bg-gray-100 md:bg-base-ligth/70 transition-all duration-300 md:left-0 h-full`}>
         <div className='flex flex-col justify-between h-full pt-4'>
         <div className='flex flex-col gap-4 items-center mb-6'>
             <img src='https://i.postimg.cc/BnZ9DMtq/day92-freelancing.png' className='h-28 w-28 ring ring-base-ligth rounded-full'/>
@@ -18,7 +18,7 @@ export const Sidebar = () => {
         </div>
         <ul className='flex flex-col gap-4 bg-base-ligth h-full py-12 rounded-tr-[100px]  px-6'>
             <li><Link to='/ecommerce-app' className='flex items-center gap-2 text-white font-medium text-md hover:bg-base-semilight p-2 rounded-full'><RiHome2Line className=' text-xl font-bold' /> Inicio</Link></li>
-            <li><Link to='/menu' className='flex items-center gap-2 text-white font-medium text-md hover:bg-base-semilight p-2 rounded-full'><RiShoppingCart2Line className=' text-xl font-bold'/>Tus Productos</Link></li>
+            <li><Link to='/ecommerce-app/menu' className='flex items-center gap-2 text-white font-medium text-md hover:bg-base-semilight p-2 rounded-full'><RiShoppingCart2Line className=' text-xl font-bold'/>Tus Productos</Link></li>
             <li><a href='#' className='flex items-center gap-2 text-white font-medium text-md hover:bg-base-semilight p-2 rounded-full'><RiTeamLine className=' text-xl font-bold'/> Clientes</a></li>
             <li className='mb-8'><a href='#' className='flex items-center gap-2 text-white font-medium text-md hover:bg-base-semilight p-2 rounded-full'><RiCustomerService2Line className=' text-xl font-bold'/> Reportes</a></li>
             <li className='relative flex gap-2 items-center hover:bg-base-semilight p-2 rounded-full'>

@@ -18,7 +18,7 @@ export const Product = ({product}) => {
           <img src={product.img} alt={product.name} className='w-36 h-36 object-cover  rounded-tr-xl rounded-tl-xl  '/>
           <RiDeleteBin6Line className='text-lg text-white bg-red-400 cursor-pointer p-1 box-content rounded-full absolute top-2 right-10 hover:scale-105 lg:opacity-0 lg:translate-y-2 group-hover:translate-y-0  group-hover:opacity-100 transition-all duration-200 ease-in-out' onClick={() => handleClick(product.id)}/>
         
-          <Link to={`/menu/editar-producto/${product.id}`}>
+          <Link to={`/ecommerce-app/menu/editar-producto/${product.id}`}>
             <RiPencilLine className='text-lg text-white bg-blue-400 cursor-pointer p-1 box-content rounded-full absolute top-2 right-2 hover:scale-105 lg:opacity-0 lg:translate-y-2 group-hover:translate-y-0  group-hover:opacity-100 transition-all duration-200 ease-in-out' />
           </Link>
           <div className='bg-base-dark/30 rounded-br-xl rounded-bl-xl p-2'>

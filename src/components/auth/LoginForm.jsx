@@ -29,7 +29,7 @@ export const LoginForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         if(user.email === 'user@gmail.com' && user.password === 'admin123'){
-            navigate('/menu')
+            navigate('/ecommerce-app/menu')
             setErrorMessage(false)
         }else{
             setErrorMessage(true)
@@ -48,7 +48,7 @@ export const LoginForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-        <div className='flex flex-col gap-4 bg-base-primary py-14 px-16  rounded-xl items-center shadow-xl '>
+        <div className='flex flex-col gap-4 bg-base-primary py-14 lg:px-16 px-6  rounded-xl items-center shadow-xl  '>
         <h2 className='text-2xl font-medium text-base-dark mb-4'>Iniciar <span className='text-base-ligth'>Sesion</span></h2>
         <div className='relative'>
         <input type='email' name='email' placeholder='Escriba su correo electronico' required className={`py-2 pl-8 pr-12 bg-base-dark/20  rounded-xl md:w-96 outline-none text-base-dark ${errorMessage && 'border border-red-400'} `} onChange={(e) => handleChange(e)}/>

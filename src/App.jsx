@@ -14,13 +14,13 @@ function App() {
     <div className=" h-screen scrollbar-thin scrollbar-thumb-base-ligth scrollbar-track-base-ligth/50 overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
       <Routes>
         <Route path="/ecommerce-app" element={<Home />}/>
-        <Route path='/product/:id' element={<ProductDetail/>}/>
-        <Route path='/auth/login' element={<Auth/>}/>
-        <Route path='/menu' element={<MenuAdmin/>}/>
-        <Route path='/menu/agregar-producto' element={<AddProduct/>}/>
-        <Route path='/menu/editar-producto/:id' element={<AddProduct/>}/>
-        <Route path='/category/:categoryName' element={<AllProducts />}/>
-        <Route path='/moda/search/:productSearch' element={<MenuAdmin />}/>
+        <Route path='/ecommerce-app/product/:id' element={<ProductDetail/>}/>
+        <Route path='/ecommerce-app/auth/login' element={<Auth/>}/>
+        <Route path='/ecommerce-app/menu' element={<MenuAdmin/>}/>
+        <Route path='/ecommerce-app/menu/agregar-producto' element={<AddProduct/>}/>
+        <Route path='/ecommerce-app/menu/editar-producto/:id' element={<AddProduct/>}/>
+        <Route path='/ecommerce-app/category/:categoryName' element={<AllProducts />}/>
+        <Route path='/ecommerce-app/moda/search/:productSearch' element={<MenuAdmin />}/>
         <Route path="*" element={<Error404 />} />
       </Routes>
     </div>

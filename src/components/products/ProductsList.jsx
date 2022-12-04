@@ -21,7 +21,7 @@ export const ProductsList = ({title, categorieId}) => {
     <div className='flex flex-col lg:items-start mb-6 px-4'>
     <div className='flex justify-between  w-full  mb-2'>
         <h1 className='font-medium text-xl text-base-superDark mb-4'>{title}</h1>
-        <Link to={`/category/${String(title).toLowerCase()}`}>
+        <Link to={`/ecommerce-app/category/${String(title).toLowerCase()}`}>
             <p className='flex items-center text-base-superDark/70 text-xs font-medium tracking-widest hover:text-base-superDark/90 cursor-pointer transition-colors group'>VER TODO <RiArrowRightLine className='text-lg group-hover:translate-x-2 transition-all'/></p>
         </Link>
     </div>

@@ -45,7 +45,7 @@ export const ProductsList = () => {
                     </select>
                 </div>
             </div>
-            <Link to={'/menu/agregar-producto'} className='bg-base-ligth py-2 px-3 rounded-xl text-white font-semibold w-52 hover:bg-base-semilight transition-all hover:tracking-widest text-center shadow-lg shadow-base-ligth/50'>Agregar producto</Link>
+            <Link to={'/ecommerce-app/menu/agregar-producto'} className='bg-base-ligth py-2 px-3 rounded-xl text-white font-semibold w-52 hover:bg-base-semilight transition-all hover:tracking-widest text-center shadow-lg shadow-base-ligth/50'>Agregar producto</Link>
         </div>
         {
             !loading ? <Spinner />

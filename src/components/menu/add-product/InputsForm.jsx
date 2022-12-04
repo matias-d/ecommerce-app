@@ -41,7 +41,7 @@ export const InputsForm = () => {
 
             Controllers.addProduct(product)
         }
-        navigate('/menu')
+        navigate('/ecommerce-app/menu')
     }
 
     useEffect(() => {
@@ -57,8 +57,8 @@ export const InputsForm = () => {
 
 
   return (
-    <div className='w-full  flex justify-center py-12'>
-        <section className='bg-base-primary p-8 rounded-xl w-96 lg:w-[450px] flex flex-col gap-6 drop-shadow-lg text-base-dark'>
+    <div className='w-full  flex justify-center pb-12'>
+        <section className='bg-base-primary p-8 rounded-xl w-42 lg:w-[450px] flex flex-col gap-6 drop-shadow-lg text-base-dark'>
         <h2 className='text-2xl font-medium text-base-ligth text-center'>{id ? 'Editar' : 'Agregar nuevo'} <span className='text-base-superDark'>Producto</span></h2>
         <form onSubmit={handleSubmit}>
             <div className='flex flex-col gap-4'>

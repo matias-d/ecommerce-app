@@ -40,7 +40,7 @@ export const Header = () => {
                             {
                                 options.map((option) => {
                                     return(
-                                        <Link to={`/category/${option.toLocaleLowerCase()}`}>
+                                        <Link to={`/ecommerce-app/category/${option.toLocaleLowerCase()}`}>
                                             <div className='text-center cursor-pointer hover:border-l-4 hover:border-base-dark'>
                                                 <p className='text-sm font-medium text-white  hover:bg-base-semilight/90  py-2 transition-all'>{option}</p>
                                             </div>
@@ -59,7 +59,7 @@ export const Header = () => {
                 <input type='text' placeholder='Buscar productos' className='py-2 pl-8 pr-4 rounded-full border-none outline-none bg-base-dark/25 text-base-dark text-sm'/>
                 <RiSearchLine className='absolute top-1/2 -translate-y-1/2 left-2 font-bold text-base-ligth'/>
             </form>
-            <Link to='/auth/login'>
+            <Link to='/ecommerce-app/auth/login'>
                 <button className='bg-base-dark/25 py-2.5 px-3 rounded-full hover:bg-base-dark/30 transition-all hover:scale-105'><RiUser3Line className='text-base-ligth'/></button>
             </Link>
         </div>

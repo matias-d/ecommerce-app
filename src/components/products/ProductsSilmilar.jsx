@@ -23,7 +23,7 @@ export const ProductsSilmilar = () => {
 
 
   return (
-    <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-6'>
+    <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6'>
         {
             !loading ?
             <div className=' w-[80vw] lg:w-[1064px]'>

@@ -13,7 +13,6 @@ export const Header = () => {
     setSearchProduct('')
   }
 
-  console.log(searchProduct)
 
   return (
     <header className='h-32  px-8  flex flex-col gap-4 py-6 items-center md:items-start md:flex-row justify-between shadow-lg'>
