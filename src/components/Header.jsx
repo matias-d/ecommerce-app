@@ -7,7 +7,7 @@ import {
     RiCodeFill, 
     RiArrowDropRightLine} 
     from 'react-icons/ri'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 
 export const Header = () => {
@@ -19,6 +19,14 @@ export const Header = () => {
         open : false,
     });
 
+    const [searchProduct, setSearchProduct] = useState('');
+
+    const navigate = useNavigate()
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        navigate(`/ecommerce-app/search/${searchProduct}`)
+    }
 
   return (
     <header className=' flex flex-col md:flex-row justify-around items-center text-base-dark py-4 gap-4 md:gap-0 border border-b-base-dark/5'>
@@ -55,8 +63,13 @@ export const Header = () => {
             </ul>
          </nav>
         <div className='flex gap-x-3'>
-            <form className='relative'>
-                <input type='text' placeholder='Buscar productos' className='py-2 pl-8 pr-4 rounded-full border-none outline-none bg-base-dark/25 text-base-dark text-sm'/>
+            <form onSubmit={handleSubmit} className='relative'>
+                <input 
+                type='text' 
+                placeholder='Buscar productos' 
+                className='py-2 pl-8 pr-4 rounded-full border-none outline-none bg-base-dark/25 text-base-dark text-sm'
+                onChange={(e) => setSearchProduct(e.target.value) }    
+                />
                 <RiSearchLine className='absolute top-1/2 -translate-y-1/2 left-2 font-bold text-base-ligth'/>
             </form>
             <Link to='/ecommerce-app/auth/login'>

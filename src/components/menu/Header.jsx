@@ -10,7 +10,6 @@ export const Header = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     navigate(`/ecommerce-app/moda/search/${searchProduct}`)
-    setSearchProduct('')
   }
 
 
@@ -19,7 +18,12 @@ export const Header = () => {
         <h1 className='text-3xl font-medium text-base-dark order-1 md:order-none md:text-center'>🌞 Bienvenido <span className='text-base-ligth'>Usuario</span></h1>
         <form onSubmit={handleSubmit}>
           <div className='relative'>
-              <input type='text' value={searchProduct} placeholder='Buscar productos' className='py-2 pl-8 pr-4 rounded-full border-none outline-none bg-base-dark/25 text-base-dark text-sm w-72' onChange={(e) => setSearchProduct(e.target.value)}/>
+              <input 
+              type='text' 
+              value={searchProduct} 
+              placeholder='Buscar productos' 
+              className='py-2 pl-8 pr-4 rounded-full border-none outline-none bg-base-dark/25 text-base-dark text-sm w-72' 
+              onChange={(e) => setSearchProduct(e.target.value)}/>
               <RiSearchLine className='absolute top-3 left-2 font-bold text-base-ligth'/>
           </div>
         </form>
