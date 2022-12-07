@@ -40,7 +40,7 @@ Es muy importante que el sitio sea adaptable para que los clientes puedan compra
   
   ----------------
   
-  - ### Menu Adminstrador
+  - ### Menu Adminstrador :bust_in_silhouette:
   <img  src="https://i.postimg.cc/RFRCRKgz/i-Phone-XR-XS-Max-414x896.png" width = 393 height = 768>
   <img  src="https://i.postimg.cc/g032xfRj/i-Pad-768x1024.png" width = 393 heigth = 768>
   
