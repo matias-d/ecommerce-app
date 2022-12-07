@@ -4,12 +4,14 @@ import { getAllProducts } from '../../services/GetAllProducts';
 import { getProducts } from '../../services/GetProducts';
 
 import { Spinner } from '../svg/Spinner';
+import { ModalDelete } from './ModalDelete';
 import { Product } from './Product';
 
 export const ProductsList = () => {
 
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(false);
+    const [showModal, setShowModal] = useState(false);
     const [filter, setFilter] = useState('all');
 
 
@@ -28,7 +30,7 @@ export const ProductsList = () => {
     }, [filter]);
 
   return (
-    <div className='pb-12'>
+    <div className='pb-12 relative'>
         <div className='flex flex-col gap-4 md:flex-row justify-between my-6 items-center'>
             <div className='flex flex-col md:flex-row gap-4 items-center '>
                 <h3 className='text-2xl font-medium text-base-dark'>Tus <span className='text-base-ligth'>productos</span></h3>
@@ -53,11 +55,15 @@ export const ProductsList = () => {
             <div className='grid grid-cols-2 place-items-center md:place-items-start md:grid-cols-3 lg:grid-cols-6 gap-4'>
                 {
                     products.map((product) => (
-                        <Product product={product}/>
+                        <Product product={product} setShowModal={setShowModal}/>
                     ))
                 }
             </div>
         }
+        {
+            showModal &&  <ModalDelete />
+        }
+      
     </div>
   )
 }

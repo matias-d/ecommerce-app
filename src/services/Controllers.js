@@ -9,7 +9,7 @@ const addProduct = ({img, category, name, price, description}) => {
         categoryValue = 2
     }else if(category === 'moda'){
         categoryValue = 3
-    }else if(category === 'otro'){
+    }else if(category === 'otros'){
         categoryValue = 4
     }
 

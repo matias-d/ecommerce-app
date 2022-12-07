@@ -4,12 +4,15 @@ import { Link } from 'react-router-dom'
 import { Controllers } from '../../services/Controllers'
 
 
-export const Product = ({product}) => {
+export const Product = ({product, setShowModal}) => {
   
 
  const handleClick = (id) => {
+  setTimeout(() => {
+    setShowModal(false)
+  },4000)
   Controllers.deleteProduct(id)
-  window.location.reload()
+  setShowModal(true)
  }
 
 
