@@ -14,7 +14,7 @@ Para ello están pidiendo nuestra ayuda como desarrolladores, el e-commerce debe
 - Un formulário de iniciar sesión para autenticar a los usuarios que quieran acceder al menu administrador.
 - Menú de administrador para que puedan agregar, editar, buscar o eliminar productos de la tienda.
 
-Es muy importante que el sitio sea adaptable para que los clientes puedan comprar fácilmente a través de dispositivos móviles.
+Es muy importante que el sitio sea adaptable para que los clientes puedan comprar fácilmente a través de dispositivos móviles. :iphone:
   
 - ### Tecnologias usadas :hammer:
 
