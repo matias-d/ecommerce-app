@@ -1,5 +1,7 @@
+import { API_URL } from "./Keys"
+
 
 export const getAllProducts = async() => {
-    const response = await fetch('https://json-server-ecom-production.up.railway.app/products')
+    const response = await fetch(`${API_URL}/products`)
     return await response.json()
 }

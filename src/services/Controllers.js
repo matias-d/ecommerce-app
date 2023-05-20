@@ -1,4 +1,7 @@
 import { v4 as uuid } from 'uuid';
+import { API_URL } from './Keys';
+
+
 
 const addProduct = ({img, category, name, price, description}) => {
 
@@ -15,7 +18,7 @@ const addProduct = ({img, category, name, price, description}) => {
 
     let imgValue = img || 'https://fisnikde.com/wp-content/uploads/2019/01/broken-image.png'
 
-    return fetch('https://json-server-ecom-production.up.railway.app/products',{
+    return fetch(`${API_URL}/products`,{
         method: "POST",
         headers:{
             "Content-Type": "application/json"
@@ -27,7 +30,7 @@ const addProduct = ({img, category, name, price, description}) => {
 const editProduct = ({img, category, name, price, description, id, categoryId}) =>{
 
 
-    return fetch(`https://json-server-ecom-production.up.railway.app/products/${id}`,{
+    return fetch(`${API_URL}/products/${id}`,{
         method: "PUT",
         headers:{
             "Content-Type": "application/json"
@@ -37,7 +40,7 @@ const editProduct = ({img, category, name, price, description, id, categoryId}) 
 }
 
 const deleteProduct = (id) => {
-    return fetch(`https://json-server-ecom-production.up.railway.app/products/${id}`,{
+    return fetch(`${API_URL}/products/${id}`,{
         method: "DELETE"
     })
 }
